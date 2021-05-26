@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { isName } from '../src/cli.js';
 
 let number = 0;
 const startGame = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -19,8 +19,8 @@ const isEvenNumber = (num) => {
 const correctAnswer = () => isEvenNumber(number);
 const isCorrect = () => console.log('Correct!');
 const isWrong = () => console.log(`'${isAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer()}'`);
-const isTryAgain = () => console.log(`Let's try again, ${name}!`);
-const finish = () => console.log(`Congratulations, ${name}!`);
+const isTryAgain = () => console.log(`Let's try again, ${isName}!`);
+const finish = () => console.log(`Congratulations, ${isName}!`);
 
 const brainEven = () => {
   startGame();
