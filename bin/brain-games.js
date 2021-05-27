@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import { welcome, askName, name } from '../src/cli.js';
-import brainEven from './brain-even.js';
+import { welcome, askName, assignName } from '../src/cli.js';
+import {brainEven } from './brain-even.js';
 
 welcome();
+assignName();
 askName();
-name();
 brainEven();
